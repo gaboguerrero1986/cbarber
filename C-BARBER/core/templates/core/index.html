@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/core/css/estilos.css">
+    <style>
+        #home {
+            background: url('../static/core/img/andre-reis-1_DAlXy0wng-unsplash.jpg') no-repeat center center fixed;
+            height: 85vh;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>  
+    <header class="header">
+        <div class="container container-nav">
+            <div class="site-title">
+                <h1>C-Barber</h1>
+                <p class="subtitle">preparado para tu corte </p>
+            </div>
+            <nav>
+                <li><ahref="principal.html" class="{% url 'inicio' %}">Inicio</a></li>
+                <li><a href="{% url 'galeria' %}">Galeria</a></li>
+                <li><a href="{% url 'agendar' %}">agendar</a></li>
+                <li><a href="{% url 'inf' %}">Info</a></li>
+            </nav>
+        </div>
+    </header>   
+    <main>
+        <div id="home">
+            <div class="overlay">
+                <div class="landing-text">
+                    <h3>Preparado para tu corte</h3>
+                    <h1>C-barber</h1>
+                    <hr id="hr-main">
+                    <a href="contactame.html" class="button btn-hire">Enlace</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+
+</html>

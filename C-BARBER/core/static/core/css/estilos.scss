@@ -1,0 +1,21 @@
+$tamano: 150px;
+$alto: 20px;
+
+$anchoinput: 80%;
+$saltoinput: 20px;
+
+ul{
+   list-style-type: none; 
+}
+
+ul label{
+   width: $tamano; 
+   height: $alto;
+   display: inline-block;
+}
+
+input[type="text"],select,input[type="date"]{
+    width: $anchoinput;
+    height: $saltoinput;
+}
+

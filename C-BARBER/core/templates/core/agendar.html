@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../static/core/css/estilos.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container container-nav">
+                <div class="site-title">
+                    <h1>C-Barber</h1>
+                    <p class="subtitle">preparado para tu corte</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="{% url 'inicio' %}">>Inicio</a></li>
+                        <li><a href="{% url 'galeria' %}">Galeria</a></li>
+                        <li><a href="{% url 'agendar' %}">agendar</a></li>
+                        <li><a href="{% url 'inf' %}">Info</a></li>
+                    </ul>
+    
+                </nav>
+            </div>
+        </header>
+        <form id="formulario" method="post" action="#">
+            <ul>
+                <li>
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="Nombre Completo">
+                </li>
+                <li>
+                    <label for="Cedula">Cedula</label>
+                    <input type="text" id="cedula" placeholder="Nombre Completo">
+
+
+                </li>
+                <li>
+                    <label for="Telefono">Telefono</label>
+                    <input type="text" id="Telefono" placeholder="Telefono">
+                </li>
+                <li>
+                    <label for="Dia">Dia de cita</label>
+                    <input type="date" id="Fecha cita">
+                </li>
+
+                <li>
+                    <label for="horario">Horario</label>
+                    <select id="Hora">
+                        <option></option>
+                        <option>Mañana</option>
+                        <option>Mediodia</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </li>
+
+                <li>
+                    <button type="submit">Reservar Turno</button>
+                </li>
+
+
+
+
+            </ul>
+
+
+
+        </form> 
+        <script src="" async defer></script>
+    </body>
+</html>

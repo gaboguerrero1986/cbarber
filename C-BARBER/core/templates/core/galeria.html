@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/core/css/estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container-nav">
+            <div class="site-title">
+                <h1>C-Barber</h1>
+                <p class="subtitle">preparado para tu corte</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'inicio' %}">>Inicio</a></li>
+                    <li><a href="{% url 'galeria' %}">Galeria</a></li>
+                    <li><a href="{% url 'agendar' %}">agendar</a></li>
+                    <li><a href="{% url 'inf' %}">Info</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class='cortes'>
+        <div class="galeria-header">
+            <h1>algunos de los cortes</h1>
+            <p>espero vuelvas pronto</p>
+        </div>
+        <div class="gallery-row">
+            <img src="../static/core/img/1.jpg" alt="" style="width: 100%">
+            <img src="../static/core/img/2.jpg" alt="" style="width: 100%">
+            <img src="../static/core/img/3.jpg" alt="" style="width: 100%">
+            <img src="../static/core/img/4.jpg" alt="" style="width: 100%">
+            
+        </div>
+        <div class="column">
+             
+            <img src="../static/core/img/5.jpg" alt="" style="width: 100%">
+            <img src="../static/core/img/6.jpg" alt="" style="width: 100%">
+            <img src="../static/core/img/7.jpg" alt="" style="width: 100%">
+            <img src="../static/core/img/8.jpg" alt="" style="width: 100%">
+             
+
+        </div>
+        <div class="column">
+            <img src="../static/core/img/9.jpg" alt="" style="width: 100%">
+            <img src="../static/core/img/10.jpg" alt="" style="width: 100%">
+            <img src="../static/core/img/11.jpg" alt="" style="width: 100%">
+            <img src="../static/core/img/12.jpg" alt="" style="width: 100%">
+        </div>
+        <div class="column">
+            <img src="../static/core/img/13.jpg" alt="" style="width: 100%">
+            <img src="../static/core/img/14.jpg" alt="" style="width: 100%">
+        </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <h3><span id="demo">&copy;</span><a href="#">C-barber.com</a></h3>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
